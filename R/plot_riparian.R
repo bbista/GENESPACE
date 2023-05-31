@@ -609,7 +609,7 @@ riparian_engine <- function(blk,
   }
 
   if(!is.null(customRefChrOrder)){
-    customRefChrOrder <- as.character(customRefChrOrder)
+    customRefChrOrder <- customRefChrOrder
     if(any(is.null(customRefChrOrder)) || any(is.na(customRefChrOrder)))
       stop("customRefChrOrder is given but can't be coerced to character\n")
   }
